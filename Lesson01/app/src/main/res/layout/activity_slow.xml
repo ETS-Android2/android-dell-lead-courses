@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/activity_slow_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tempo de espera: 2s" />
+
+
+    <View
+        android:id="@+id/activity_slow_loading"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_loading"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_slow_textview" />
+
+
+    <Button
+        android:id="@+id/activity_slow_button_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Task"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/activity_slow_loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

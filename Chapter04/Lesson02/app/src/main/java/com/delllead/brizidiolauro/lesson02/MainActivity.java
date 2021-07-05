@@ -45,15 +45,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void setUpLocationPermissions(GoogleMap googleMap) {
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.ACCESS_FINE_LOCATION)
-                == PackageManager.PERMISSION_GRANTED) {
-
-            googleMap.setMyLocationEnabled(true);
-        } else {
-            requestPermissions(new String[
-                    Ma], REQUEST_CODE_PERMISSIONS);
-            Toast.makeText(this, "Permissao não concedida", Toast.LENGTH_LONG).show();
-        }
+//        if (ContextCompat.checkSelfPermission(this,
+//                Manifest.permission.ACCESS_FINE_LOCATION)
+//                == PackageManager.PERMISSION_GRANTED) {
+//
+//            googleMap.setMyLocationEnabled(true);
+//        } else {
+//            requestPermissions(new String[
+//                    ], REQUEST_CODE_PERMISSIONS);
+//            Toast.makeText(this, "Permissao não concedida", Toast.LENGTH_LONG).show();
+//        }
     }
 }

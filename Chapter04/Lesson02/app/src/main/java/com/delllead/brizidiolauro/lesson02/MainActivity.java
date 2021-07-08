@@ -1,15 +1,11 @@
 package com.delllead.brizidiolauro.lesson02;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -39,21 +35,5 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         Log.i("onMapReady", "Ready");
-
-
-        setUpLocationPermissions(googleMap);
-    }
-
-    private void setUpLocationPermissions(GoogleMap googleMap) {
-//        if (ContextCompat.checkSelfPermission(this,
-//                Manifest.permission.ACCESS_FINE_LOCATION)
-//                == PackageManager.PERMISSION_GRANTED) {
-//
-//            googleMap.setMyLocationEnabled(true);
-//        } else {
-//            requestPermissions(new String[
-//                    ], REQUEST_CODE_PERMISSIONS);
-//            Toast.makeText(this, "Permissao não concedida", Toast.LENGTH_LONG).show();
-//        }
     }
 }

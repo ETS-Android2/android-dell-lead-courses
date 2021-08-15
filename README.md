@@ -14,5 +14,4 @@
 using threads
 
 
-
-## Chapter 02
+## Chapter 02 - LocationManager

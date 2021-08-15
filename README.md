@@ -13,5 +13,4 @@
 > The final challenge of this chapter was to develop a application to show a list of random orders
 using threads
 
-
-## Chapter 02 - LocationManager
+## Chapter 02 - LocationManage
